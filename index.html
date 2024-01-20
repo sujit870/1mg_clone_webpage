@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SujitMedicineHub.com</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!--Nav Bar-->
+    <nav id="navbar">
+        <div><a href='index.html' target='_self'>
+            <button id="logo"><img id="logo" src="C:\Users\LENOVO\Desktop\PROJECT TESTING\images\ttttrtrtt (2).png" alt="logo"></button></a>
+        </div>
+        <div id="nbr" >
+            <div>
+                <a href="medicine.html" target="_blank"><button id="medicine" >MEDICINES</button></a>
+            </div>
+            <div>
+                <a href="lab-test.html" target="_blank"><button id="lab-test">LAB TESTS</button><button style="background-color: #ff6f61;margin-left: -5px;" id="safe" class="btn" >SAFE</button></a>
+            </div>
+            <div>
+                <a href="consult-doctor.html" target="_blank"><button id="consult-doctor">CONSULT DOCTORS</button></a>
+            </div>
+            <div>
+                <a href="covid-19.html" target="_blank"><button id="covid-19">COVID-19</button></a>
+            </div>
+            <div>
+                <a href="ayurveda.html" target="_blank"><button id="ayurveda">AYURVEDA</button></a>
+            </div>
+            <div>
+                <a href="care-plan.html" target="_blank"><button id="care-plan">CARE PLAN <button style="background-color:#ff6f61; margin-left: -5px;" class="btn" >SAVE MORE</button></button></a>
+            </div>
+        </div>
+        <div id="user">
+            <!--log in form-->
+            <div class="login"><button id="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+                <div id="id01" class="modal">
+                    <form id="form" class="modal-content animate" action="/action_page.php" method="post">
+                      <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      </div>
+                      
+                      <div style="padding-left: 20px;margin-bottom: -10px;">
+                        <h1 style="color: black;">Login</h1>
+                        <p><u>Get access to your orders, lab tests & doctor consultations</u></p>
+                      </div>
+                      <div id="contlogin" class="container">
+                        <label for="uname"><b>Email Id</b></label>
+                        <input id="logEmail" type="text" placeholder="Enter Email" name="email" required>
+                  
+                        <label for="psw"><b>Password</b></label>
+                        <input id="logPass" type="password" placeholder="Enter Password" name="psw" required>
+                          
+                        <button id="loginbutton" class="bb" style="background-color: #ff6f61;" type="submit">Login</button>
+                        <label>
+                          <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                      </div>
+                  
+                      <div id="cancelbtn" class="container" style="background-color:#f1f1f1">
+                        <button class="bb" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <span id="change" class="psw">Forgot <a href="#">password?</a></span>
+                      </div>
+                    </form>
+                  </div>
+                
+                
+                |
+                <!--Sign Up form-->
+                <button id="signup" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
+                <div id="id02" class="modal">
+                    <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <form id="form-signup" class="modal-content" action="/action_page.php">
+                      <div id="suc" class="container">
+                        <h1>Sign Up</h1>
+                        <p>Please fill in this form to create an account.</p>
+                        <hr>
+                        <label for="email"><b>Email</b></label>
+                        <input id="email" type="text" placeholder="Enter Email" name="email" required>
+                  
+                        <label for="psw"><b>Password</b></label>
+                        <input id="pass" type="password" placeholder="Enter Password" name="psw" required>
+                  
+                        <label for="psw-repeat"><b>Repeat Password</b></label>
+                        <input id="passR" type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                        
+                        <label>
+                          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                        </label>
+                  
+                        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                  
+                        <div class="clearfix">
+                            <button id="signupbtn" type="submit" class="signupbtn" style="background-color:black">Sign Up</button>
+                          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                          
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+
+
+            </div>
+        </div>
+        <div class="login"><button id="offers">Offers</button></div>
+        <a href="cart.html" target="_blank"><button class="login" id="cart"><img src="https://cdn.pixabay.com/photo/2012/04/16/11/34/shopping-35594__340.png" height="25px" width="30px" alt="cart"></button></a>
+
+        <div class="login"><button id="need-help">Need Help?</button></div>
+    </nav>
+    <!--Search bar-->
+    <div class="topnav">
+        <div>
+            <input class="search" type="text" placeholder=" Enter Your City " style="margin-left: 50px;height: 25px;width: 20%; background-color: #f1f4f6;border: none;">
+            <input class="search"  type="text" placeholder=" Search for Medicines and Health Products" style="height: 25px;width: 500px;background-color: #f1f4f6;border: none;">
+            
+        </div>
+        <div><span style="font-size: medium;"> QUICK BUY! Get 25% off on medicines*</span>
+        <button style="font-size: medium;padding: 10px 25px 10px 25px; margin-right: 20px;" class="btn" >Quick Order</button></div>
+    </div>
+    <!--Drop Down -->
+    <div id="dropdowndiv">
+        <div class="dropdown">
+            <button class="dropbtn">Health Resource Center</button>
+            <div class="dropdown-content">
+              <a href="#">All Dieases</a>
+              <a href="#">All Medicines</a>
+              <a href="#">Medicines by therapeutic Class</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Vitamins & Nutrition</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Diabetes</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Healthcare Devices</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Personal Care</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Health Conditions</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Ayurveda Products</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Homeopathy</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Featured</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Covid Essentials</button>
+            <div class="dropdown-content">
+              <a href="#">Covid-19 Self test kits</a>
+              <a href="#">Oxygen Cans & Concentrators</a>
+              <a href="#">Masks</a>
+              <a href="">Sanitizers & Handwash products</a>
+              <a href="">Support your Immunity</a>
+              <a href="">Thermometer</a>
+              <a href="">Chyawamprash</a>
+            </div>
+        </div>   
+    </div>
+    <!--banner -->
+    <div id="banner" >
+        <div id="bannerImage1">
+            <a href="medicine.html" target="_blank">
+                <img class="bannerImage" id="sujeet" src="https://onemg.gumlet.io/ca163b43-ce33-4440-b5c8-cb4d7ff58e43_1664853845.jpg?w=877&h=200&format=auto" alt="banner">
+            </a>
+        </div>
+        <div id="bannerImage2">
+            <a href="medicine.html" target="_blank">
+                <img class="bannerImage" src="https://onemg.gumlet.io/a_ignore,w_480,h_200,c_fit…o,f_auto/85bbe9a7-230b-4836-bff3-d5f451b426a7.png" alt="Ayurveda">
+            </a>
+        </div>
+    </div>
+    <!--banner Heading -->
+    <div id="BannerHeding" >SujitMedicineHub.com: India’s Leading Online Pharmacy & Healthcare Platform</div>
+    <!--banner with button -->
+    <div id="BannerWithBtn">
+        <a href="care-plan.html">
+            <img id="bannerImageBtn" src="	https://onemg.gumlet.io/image/upload/v1647251796/ueyxzzku83yuvpqxyrwe.png" alt="">
+        </a>
+    </div>
+   
+
+</body>
+<script src="./index.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
