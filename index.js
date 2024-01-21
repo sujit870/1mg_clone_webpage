@@ -51,72 +51,70 @@ window.onclick = function(event) {
 
   //signUp
 
-let myForm = document.getElementById('form-signup');
-let signUpCont = document.getElementById('suc')
-let signUpData =JSON.parse(localStorage.getItem('signup')) || [];
-myForm.addEventListener('submit', (e)=>{
-  e.preventDefault();
-  let obj = {
-    email : myForm.email.value,
-    pass: myForm.pass.value,
-    passR: myForm.passR.value
-  }
-    signUpData.push(obj);
-    localStorage.setItem('signup', JSON.stringify(signUpData));
-    signupbtn.addEventListener('click', (e)=>{
+  let myForm = document.getElementById('form-signup');
+  let signUpCont = document.getElementById('suc')
+  let signUpData =JSON.parse(localStorage.getItem('signup')) || [];
+  myForm.addEventListener('submit', (e)=>{
     e.preventDefault();
-    // alert('Sign Up Successful!, Login now')
-    let s = document.createElement('div');
-    s.innerText = 'Sign Up Successful!';
-    s.style.color = 'mat';
-    s.style.fontSize = 'xx-large';
-    let loginafterSignup = document.createElement('a');
-    loginafterSignup.innerText = 'click here to login'
-    loginafterSignup.setAttribute('href', 'index.html')
-    loginafterSignup.style.padding = '0px 5px 0px 550px'
-    signUpCont.append(s,loginafterSignup);
-    loginafterSignup.style.fontSize = 'large'
-    // signUpCont.style.display = 'flex'
-    // signupbtn.innerText = signUpCont
-
-})
-})
-let signupbtn = document.getElementById('signupbtn');
-let loginbutton = document.getElementById('loginbutton');
-
-// console.log(signUpData[0].email, signUpData[0].pass)
-
-  //logIn
-  let loginEmail = document.getElementById('logEmail');
-  let loginPass = document.getElementById('logPass');
-
-let logincont =  document.getElementById('contlogin')
-
-let change = document.getElementById('change')
-let user = document.getElementById('user')
-
-  let logIn = document.getElementById('form');
-  logIn.addEventListener('submit', (e)=>{
-    e.preventDefault();
-    signUpData.forEach(element => {
-        if(loginEmail.value!==element.email || loginPass.value !==element.pass){
-            // logincont.innerText = 'Wrong Credential!', 'tryAgain';
-            // logincont.style.color = '#ff6f61';
-          //   // logincont.style.fontSize = 'x-large'
-          //  alert("wrong credential")
-        }
-        else{
-       
-            logincont.innerText = 'Login Successful!';
-            logincont.style.color = '#ff6f61';
-            logincont.style.fontSize = 'xx-large';
-            user.innerText = loginEmail.value;
-            // let gotoCart = document.createElement('a');
-            // gotoCart.setAttribute('href', 'cart.html');
-            // logincont.append(gotoCart)
-
-
-        }
-    });
+    let obj = {
+      email : myForm.email.value,
+      pass: myForm.pass.value,
+      passR: myForm.passR.value
+    }
+      signUpData.push(obj);
+      localStorage.setItem('signup', JSON.stringify(signUpData));
+      signupbtn.addEventListener('click', (e)=>{
+      e.preventDefault();
+      // alert('Sign Up Successful!, Login now')
+      let s = document.createElement('div');
+      s.innerText = 'Sign Up Successful!';
+      s.style.color = 'mat';
+      s.style.fontSize = 'xx-large';
+      let loginafterSignup = document.createElement('a');
+      loginafterSignup.innerText = 'click here to login'
+      loginafterSignup.setAttribute('href', 'index.html')
+      loginafterSignup.style.padding = '0px 5px 0px 550px'
+      signUpCont.append(s,loginafterSignup);
+      loginafterSignup.style.fontSize = 'large'
+      // signUpCont.style.display = 'flex'
+      // signupbtn.innerText = signUpCont
+  
   })
-
+  })
+  let signupbtn = document.getElementById('signupbtn');
+  let loginbutton = document.getElementById('loginbutton');
+  
+  // console.log(signUpData[0].email, signUpData[0].pass)
+  
+    //logIn
+    let loginEmail = document.getElementById('logEmail');
+    let loginPass = document.getElementById('logPass');
+  
+  let logincont =  document.getElementById('contlogin')
+  
+  let change = document.getElementById('change')
+  let user = document.getElementById('user')
+  
+    let logIn = document.getElementById('form');
+    logIn.addEventListener('submit', (e)=>{
+      e.preventDefault();
+      signUpData.forEach(element => {
+          if(loginEmail.value!==element.email || loginPass.value !==element.pass){
+              // logincont.innerText = 'Wrong Credential!', 'tryAgain';
+              // logincont.style.color = '#ff6f61';
+              // logincont.style.fontSize = 'x-large'
+          }
+          else{
+              logincont.innerText = 'Login Successful!';
+              logincont.style.color = '#ff6f61';
+              logincont.style.fontSize = 'xx-large';
+              user.innerText = loginEmail.value;
+              // let gotoCart = document.createElement('a');
+              // gotoCart.setAttribute('href', 'cart.html');
+              // logincont.append(gotoCart)
+  
+  
+          }
+      });
+    })
+  
