@@ -530,6 +530,64 @@ input[type=text], input[type=password] {
   }
 
   /* cart page works */
+  #main-div{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+  }
+  #main-div div{
 
+    margin: auto;
+    
+  }
+  #cartCont{
+    width: 45%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  #payment{
+    width: 45%;
+    display: block;
+    align-items: center;
+    
+  }
+#cpn{
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    padding: 5px;
+    margin: 5px;
+    font-size: x-large;
+    color: #ff6f61
+}
+#tk{
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    padding: 5px;
+    margin: 5px;
+}
+#s{
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    padding: 5px;
+    margin-top: 30px;
+}
+.a{
+    
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: -30px; */
+}
+#checkout{
+    color: white;
+    background-color: #ff6f61;
+    cursor: pointer;
+    padding: 13px 10px ;
+    text-align: center;
+    border-radius: 2px;
+}
+#ck{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 20px 10px;
+    margin: 5px;
+}
 
   
