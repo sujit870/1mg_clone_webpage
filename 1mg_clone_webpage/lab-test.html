@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Tests</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #66ccff, #99ffcc);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 0.5em;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Medical Tests</h1>
+    </header>
+
+    <nav>
+        <a href="#Acetaminophen">Acetaminophen Level</a>
+        <a href="#BloodGlucose">Blood Glucose Test</a>
+        <a href="#Cholesterol">Cholesterol Levels</a>
+        <!-- Add more links as needed -->
+    </nav>
+
+    <section id="Acetaminophen">
+        <h2>Acetaminophen Level</h2>
+        <p>
+            The Acetaminophen Level test measures the amount of acetaminophen (Tylenol) in the blood. Acetaminophen is a common pain reliever and fever reducer.
+        </p>
+        <p>
+            <strong>Why the test is done:</strong> It is ordered to determine if a person has taken too much acetaminophen, which can lead to liver damage.
+        </p>
+        <p>
+            <strong>How the test is performed:</strong> A blood sample is taken from a vein in the arm.
+        </p>
+    </section>
+
+    <section id="BloodGlucose">
+        <h2>Blood Glucose Test</h2>
+        <p>
+            The Blood Glucose Test measures the amount of glucose (sugar) in the blood. It is commonly used to diagnose and monitor diabetes.
+        </p>
+        <p>
+            <strong>Why the test is done:</strong> It helps in managing diabetes and assessing blood sugar levels.
+        </p>
+        <p>
+            <strong>How the test is performed:</strong> A small amount of blood is drawn, usually from the fingertip, and analyzed with a glucose meter or sent to a laboratory.
+        </p>
+    </section>
+
+    <section id="Cholesterol">
+        <h2>Cholesterol Levels</h2>
+        <p>
+            Cholesterol Levels test measures the levels of different types of cholesterol in the blood, including LDL (low-density lipoprotein) and HDL (high-density lipoprotein).
+        </p>
+        <p>
+            <strong>Why the test is done:</strong> It assesses the risk of heart disease and helps in managing cholesterol levels through lifestyle changes or medication.
+        </p>
+        <p>
+            <strong>How the test is performed:</strong> A blood sample is taken, usually after fasting overnight, to get accurate cholesterol measurements.
+        </p>
+    </section>
+
+    <footer>
+        <p>SujitMedicineHub - Copyright © 2024</p>
+    </footer>
+
+    <script>
+        // Smooth scroll effect for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
